@@ -35,7 +35,7 @@ resource "aws_iam_role_policy" "lambda_policy" {
           "dynamodb:DeleteItem"
         ]
         Effect   = "Allow"
-        Resource = "*" # В ідеалі тут мають бути ARN твоїх таблиць
+        Resource = "*"
       },
       {
         Action = [
